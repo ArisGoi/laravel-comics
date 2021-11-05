@@ -109,6 +109,69 @@ header nav ul a {
   height: 360px;
 }
 
+footer .footer-top {
+  height: 370px;
+  background-image: url(../images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+footer .footer-top img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 50px;
+}
+footer .footer-top .container {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+footer .footer-top ul {
+  list-style: none;
+  margin-top: 20px;
+  margin-right: 60px;
+}
+footer .footer-top ul li {
+  font-size: 1.2rem;
+  color: lightslategray;
+}
+footer .footer-top ul li:first-child {
+  text-transform: uppercase;
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-bottom: 0.225rem;
+  color: white;
+}
+footer .footer-bottom {
+  height: 6.25rem;
+  background-color: #303030;
+}
+footer .footer-bottom .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-bottom ul {
+  display: flex;
+  align-items: center;
+}
+footer .footer-bottom ul li {
+  display: inline-block;
+  color: #0282f9;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+footer .footer-bottom ul li a {
+  padding: 10px;
+}
+
 #currentSeries .container {
   position: relative;
   padding: 50px 0;
