@@ -1,0 +1,35 @@
+// PALETTE
+$c-first: #0282f9;
+
+$c-header: #FFF;
+$c-main: #1c1c1c;
+$c-footer: #303030;
+
+$c-text-main: #464646;
+
+
+// MAINRULES
+// header
+$header-height: 7rem;
+$header-logo-h: 4.375rem;
+// container
+$container-width: 1400px;
+
+
+// Utilities
+.flex-ori{
+    display: flex;
+}
+.flex-ver{
+    display: flex;
+    flex-direction: column;
+}
+.flex-ori-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-ver-wrap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

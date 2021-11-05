@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap);.flex-ori {
+  display: flex;
+}
+
+.flex-ver {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-ori-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-ver-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+main {
+  width: 100%;
+  background-color: #1c1c1c;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.btn {
+  padding: 10px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: white;
+}
+.btn.type-1 {
+  border: 3px solid #0282f9;
+  background-color: transparent;
+  font-weight: 400;
+}
+.btn.type-2 {
+  padding: 10px 50px;
+  border: none;
+  background-color: #0282f9;
+  font-weight: 700;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFF;
+  z-index: 10;
+}
+header .container {
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+}
+header .logo {
+  height: 4.375rem;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header nav ul li.current a {
+  color: #0282f9;
+}
+header nav ul li.current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background-color: #0282f9;
+}
+header nav ul a {
+  color: #464646;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 15px;
+  font-size: 18px;
+}
