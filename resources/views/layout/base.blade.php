@@ -12,6 +12,7 @@
     @include('partials.header')
 
     <main>
+        @include('partials.hero')
         @yield('pageContent')
     </main>
 

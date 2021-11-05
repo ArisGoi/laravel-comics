@@ -1,0 +1,92 @@
+#currentSeries{
+    .container{
+        position: relative;
+        padding: 50px 0;
+    
+        .currTitle{
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translateY(-50%);
+    
+            padding: .625rem;
+            background-color: $c-first;
+    
+            font-size: 1.5625rem;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 700;
+        }
+    
+        button.type-2{
+            margin-left: 50%;
+            transform: translateX(-50%);
+            margin-top: 10px;
+        }
+    }
+    
+    .wrapSeries{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+    
+        li{
+            $comicElmSize: 200px;
+            margin: 15px;
+            
+            .imgcontainer{
+                height: $comicElmSize;
+                width: $comicElmSize;
+                overflow: hidden;
+    
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 0 0;
+                }
+            }
+    
+            p{
+                color: white;
+                text-transform: uppercase;
+                margin-top: 12px;
+                font-size: 20px;
+                width: $comicElmSize;
+            }
+        }
+    }
+}
+
+#dcIndexBar{
+    background-color: $c-first;
+    width: 100%;
+    
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+    }
+    
+    li{
+        list-style: none;
+        display: flex;
+        align-items: center;
+    
+        img{
+            height: 3rem;
+        }
+        img.svg{
+            height: 2.5rem;
+        }
+    
+        h4{
+            font-size: 1.25rem;
+            margin-left: .5125rem;
+            color: white;
+        }
+    }
+}
